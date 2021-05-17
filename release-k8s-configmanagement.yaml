@@ -5,3 +5,6 @@ metadata:
 spec:
   clusterName: release-k8s
   enableMultiRepo: true
+  policyController:
+    enabled: true
+    logDeniesEnabled: true
