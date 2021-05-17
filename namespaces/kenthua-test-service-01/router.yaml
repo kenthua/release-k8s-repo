@@ -1,0 +1,9 @@
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeRouter
+metadata:
+  name: cc-egress-router-central1
+spec:
+  description: example router description
+  networkRef:
+    name: cc-vpc
+  region: us-central1
