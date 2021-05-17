@@ -11,5 +11,5 @@ spec:
   git:
     repo: https://github.com/kenthua/release-k8s-repo
     branch: main
-    dir: "/"
+    dir: "/config"
     auth: none
