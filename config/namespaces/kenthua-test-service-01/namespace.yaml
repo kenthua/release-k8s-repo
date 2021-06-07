@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  annotations:
-    cnrm.cloud.google.com/project-id: kenthua-test-service-01
-    configsync.gke.io/cluster-name-selector: release-k8s
-  name: kenthua-test-service-01
