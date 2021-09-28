@@ -1,0 +1,15 @@
+# apply-spec.yaml
+
+applySpecVersion: 1
+spec:
+  configSync:
+    # Set to true to install and enable Config Sync
+    enabled: true
+    sourceFormat: hierarchy
+    syncRepo: https://github.com/kenthua/release-k8s-repo
+    syncBranch: main
+    secretType: none
+    policyDir: /config
+  policyController:
+    enabled: true
+    logDeniesEnabled: true
