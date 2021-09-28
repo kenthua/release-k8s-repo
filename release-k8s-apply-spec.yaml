@@ -5,7 +5,7 @@ spec:
   configSync:
     # Set to true to install and enable Config Sync
     enabled: true
-    sourceFormat: hierarchy
+    sourceFormat: unstructured
     syncRepo: https://github.com/kenthua/release-k8s-repo
     syncBranch: main
     secretType: none
@@ -13,3 +13,7 @@ spec:
   policyController:
     enabled: true
     logDeniesEnabled: true
+  hierarchyController:
+    enabled: true
+    enableHierarchicalResourceQuota: true
+    enablePodTreeLabels: true

@@ -2,6 +2,7 @@ kind: NetworkPolicy
 apiVersion: networking.k8s.io/v1
 metadata:
   name: allow-all
+  namespace: ui
   annotations:
     configsync.gke.io/cluster-name-selector: release-k8s
 spec:
