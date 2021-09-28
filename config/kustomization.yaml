@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- base
+- api
+- cluster
+- commerce-frontend
+- ui
+patches:
+- path: ignore-deployment-mutation-patch.yaml
+  target:
+    kind: Deployment
