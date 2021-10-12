@@ -6,6 +6,7 @@ resources:
 - cluster
 - commerce-frontend
 - ui
+- commerce-backend
 patches:
 - path: ignore-deployment-mutation-patch.yaml
   target:

@@ -1,0 +1,15 @@
+# ROOT_REPO/namespaces/NAMESPACE/operator-rolebinding.yaml
+kind: RoleBinding
+# Add RBAC escalation prevention
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: operator
+  namespace: commerce-backend
+subjects:
+- kind: User
+  name: kenthua@google.com
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: admin
+  apiGroup: rbac.authorization.k8s.io
